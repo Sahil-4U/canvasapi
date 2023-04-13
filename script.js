@@ -1,17 +1,12 @@
 
 const canvas=document.getElementById("canvas");
 canvas.width=innerWidth;
-canvas.height=innerHeight;
-console.log('hi canvas'+ canvas)
+canvas.height=600;
 const ctx=canvas.getContext("2d");
-
-for(let i=0;i<6;i++){
-    for(let j=0;j<7;j++){
-        ctx.fillStyle=`rgb(
-            ${Math.floor(255-42.5*i)},
-            ${Math.floor(255-42.5*j)},
-            0
-        )`
-        ctx.fillRect(j*25,i*25,25,25);
-    }
+ctx.fillStyle="red";
+    ctx.fillRect(50,60,100,200)
+    ctx.strokeRect(200,60,100,200);
+function draw(event){
+    // console.log(event);
+    ctx.clearRect(50,60,50,200);
 }
