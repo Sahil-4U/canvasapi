@@ -4,9 +4,14 @@ canvas.width=innerWidth;
 canvas.height=innerHeight;
 console.log('hi canvas'+ canvas)
 const ctx=canvas.getContext("2d");
-ctx.fillStyle="gold";
 
-
-
-
-ctx.fillRect(100,400,700,200);
+for(let i=0;i<6;i++){
+    for(let j=0;j<7;j++){
+        ctx.fillStyle=`rgb(
+            ${Math.floor(255-42.5*i)},
+            ${Math.floor(255-42.5*j)},
+            0
+        )`
+        ctx.fillRect(j*25,i*25,25,25);
+    }
+}
