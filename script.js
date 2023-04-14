@@ -30,3 +30,9 @@ function drawPaths(){
   ctx.stroke();
  
 }
+function drawCircle(){
+    ctx.beginPath();
+    ctx.arc(200,100,60,0,2*Math.PI);
+    ctx.fillStyle='green';
+   ctx.fill();
+}
