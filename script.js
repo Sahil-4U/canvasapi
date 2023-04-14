@@ -16,9 +16,17 @@ function draw(event){
     
 }
 function drawPaths(){
-    ctx.beginPath();
+  ctx.beginPath();
   ctx.moveTo(100,100);
-  ctx.lineTo(150,50);
-  ctx.lineTo(150,180);
+  ctx.lineTo(200,100);
+  ctx.lineTo(100,200);
   ctx.fill();
+
+  ctx.beginPath();
+  ctx.moveTo(100,225);
+  ctx.lineTo(220,110);
+  ctx.lineTo(220,225);
+  ctx.closePath()
+  ctx.stroke();
+ 
 }
